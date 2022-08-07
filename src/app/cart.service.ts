@@ -33,7 +33,7 @@ export class CartService {
         if (index != -1){
           this.cartitems[index].quanity += 1;
         } else if(index === -1){
-          this.totalprice += p.totalprice
+          //this.totalprice += p.totalprice
           this.cartitems.push(p)
         }
         this.sum();
