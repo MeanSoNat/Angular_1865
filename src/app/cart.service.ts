@@ -52,7 +52,13 @@ export class CartService {
         return this.totalprice
       }
       
-      clearCart(){}
+      clearCart(){
+        this.cartitems = []
+        this.notifyDataChange();
+        this.totalprice = 0
+        this.quanity = 0
+        return this.cartitems
+      }
 
       deleteItem(pid: Number) { }
       
