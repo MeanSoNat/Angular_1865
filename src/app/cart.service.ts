@@ -25,15 +25,11 @@ export class CartService {
 
 
   addToCart(p: Product) { 
-    // this.cartitems.push(p);
     let index = -1;
-    index = this.cartitems.findIndex(
-      l => l.id === p.id
-      );
+    index = this.cartitems.findIndex(l => l.id === p.id);
         if (index != -1){
           this.cartitems[index].quanity += 1;
         } else if(index === -1){
-          //this.totalprice += p.totalprice
           this.cartitems.push(p)
         }
         this.sum();
@@ -59,19 +55,21 @@ export class CartService {
         this.quanity = 0
         return this.cartitems
       }
-
-      deleteItem(pid: Number) { }
       
-      sum(): void{
+      sum(): void {
         this.quanity = 0;
         this.totalprice = 0;
-        // this.totalprice += p.price;
         if(this.cartitems){
-          this.cartitems.map(products => {
+
+          this.cartitems.map(
+            products => {
             this.quanity += products.quanity
             this.totalprice += products.price * products.quanity
-            console.log(this.totalprice)
-      }) 
-    }
-  }
+            }
+            )
+
+        }
+
+      }
+
 }

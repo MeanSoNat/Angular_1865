@@ -22,7 +22,6 @@ export class CartComponent implements OnInit {
   deleteCart(){
     this.items = []
     this.cartService.clearCart()
-    this.cartService.sum()
   }
   
  
