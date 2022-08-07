@@ -45,6 +45,8 @@ export class CartService {
       }
       
       getTotalprice(){
+        this.notifyDataChange();
+        this.sum();
         return this.totalprice
       }
       
@@ -55,7 +57,15 @@ export class CartService {
         this.quanity = 0
         return this.cartitems
       }
-      
+
+      delete(pid: any){
+        let index = this.cartitems.findIndex(item => item.id === pid);
+        this.cartitems.splice(index, 1);
+        this.notifyDataChange();
+        this.sum();
+        alert('Total price: '+this.totalprice) 
+      }
+
       sum(): void {
         this.quanity = 0;
         this.totalprice = 0;

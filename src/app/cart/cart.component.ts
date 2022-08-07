@@ -14,9 +14,7 @@ export class CartComponent implements OnInit {
   totalprice = this.cartService.getTotalprice();
   
   clear(pid: any){
-    let index = this.items.findIndex(item => item.id === pid);
-    this.items.splice(index, 1)
-    this.cartService.sum()
+    this.cartService.delete(pid);
   }
 
   deleteCart(){
