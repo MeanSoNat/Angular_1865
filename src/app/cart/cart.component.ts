@@ -15,6 +15,7 @@ export class CartComponent implements OnInit {
   
   clear(pid: any){
     this.cartService.delete(pid);
+    this.totalprice = this.cartService.getTotalprice();
   }
 
   deleteCart(){
