@@ -25,8 +25,8 @@ export const products = [
         id:2,
         name: "Iphone13 ",
         price: 35000,
-        description: "Consectetur mollit deserunt ad minim est. Duis laborum nostrud nulla enim proident tempor qui amet pariatur esse. Occaecat ut sint eu deserunt ullamco in minim. Deserunt deserunt eu fugiat non non. Mollit magna id consequat occaecat ad sunt mollit voluptate culpa. Velit qui ea ex minim nostrud esse pariatur qui sint adipisicing labore adipisicing. Sunt nulla dolore dolor ullamco."
-        ,quanity:1,
+        description: "Consectetur mollit deserunt ad minim est. Duis laborum nostrud nulla enim proident tempor qui amet pariatur esse. Occaecat ut sint eu deserunt ullamco in minim. Deserunt deserunt eu fugiat non non. Mollit magna id consequat occaecat ad sunt mollit voluptate culpa. Velit qui ea ex minim nostrud esse pariatur qui sint adipisicing labore adipisicing. Sunt nulla dolore dolor ullamco.",
+        quanity:1,
         totalprice: 0
 
 

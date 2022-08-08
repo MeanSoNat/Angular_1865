@@ -1,9 +1,3 @@
-<!-- <p *ngFor="let i of items; ">
-    {{ i.name }} {{ IteminCart }}
-    Total: {{ total | currency:"THB "}}
-    {{ i }}
-</p> -->
-
 <div>
     <div *ngIf="items.length > 0">
         <table border="1">
@@ -33,6 +27,7 @@
             </tbody>
             
             <tfoot>
+                <td>สินค้าทั้งหมด: {{ IteminCart}}</td>
                 <td>Total {{ totalprice | currency: 'THB '}}</td>
             </tfoot>
 

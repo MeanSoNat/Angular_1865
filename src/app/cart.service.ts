@@ -33,6 +33,7 @@ export class CartService {
           this.cartitems.push(p)
         }
         this.sum();
+        console.log(this.cartitems.length)
         this.notifyDataChange();
       }
       
@@ -41,7 +42,7 @@ export class CartService {
       }
       
       getCartItemCount() {
-        return this.cartitems.length;
+        return this.quanity;
       }
       
       getTotalprice(){

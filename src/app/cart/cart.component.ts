@@ -13,8 +13,10 @@ export class CartComponent implements OnInit {
   IteminCart = this.cartService.getCartItemCount();
   totalprice = this.cartService.getTotalprice();
   
+
   clear(pid: any){
     this.cartService.delete(pid);
+    this.IteminCart = this.cartService.getCartItemCount();
     this.totalprice = this.cartService.getTotalprice();
   }
 
