@@ -63,7 +63,7 @@ export class CartService {
         this.cartitems.splice(index, 1);
         this.notifyDataChange();
         this.sum();
-        alert('Total price: '+this.totalprice) 
+        alert('Total price: '+ this.totalprice) 
       }
 
       sum(): void {
